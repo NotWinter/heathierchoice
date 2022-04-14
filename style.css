@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 90px;
+    left: 1%;
+    top: 2%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCC00;
+}
+
+.header .logo {
+    color: #000;
+    font-weight: 1;
+    text-decoration: none;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.border {
+    border: 6px solid #fff;
+    width: 100%;
+}
+
+#sec-1 {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+
+#sec-2 {
+    background-color: #121212;
+    color: #fff;
+}
+
+.scroll-down-2 {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -910px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down-2::before,
+.scroll-down-2::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down-2::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+
+#sec-3 {
+    background-color: #121212;
+    color: #fff;
+}
+
+.scroll-down-3 {
+    height: 50px;
+    width: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -1840px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down-3::before,
+.scroll-down-3::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down-3::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+
+#sec-4 {
+    background-color: #99CC32;
+    color: #fff;
+}
+
+.container {
+    color: #fff;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+#snacking {
+    color: #FFCC00;
+    left: 70%;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+i {
+    color: #fff;
+    position: sticky;
+}
+
+#company {
+    position: relative;
+    left: 110%;
+    top: -150;
+}
+
+#line {
+    position: relative;
+    left: 90%;
+    margin-bottom: -250;
+}
+
+#companytext {
+    background: transparent;
+    color: #FF0098;
+}
+
+p {
+    font-size: 18;
+    font-weight: normal;
+}
+
+.text1 {
+    color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 119%;
+    text-align: left;
+
+}
+
+.text2 {
+    color: #fff;
+    position: absolute;
+    left: 45%;
+    top: 238%;
+    text-align: left;
+}
+
+#hc {
+    background-color: transparent;
+    color: #99CC32;
+}
+
+#people {
+    position: relative;
+    left: -150%;
+    top: -150;
+    text-align: right;
+}
+
+#line2 {
+    position: relative;
+    left: -25%;
+    margin-bottom: -250;
+}
+
+#ourtext {
+    background: transparent;
+    color: #FFCC00;
+}
